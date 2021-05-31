@@ -1,0 +1,83 @@
+\documentclass[10pt,column,letterpaper]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[margin=2cm,a4paper]{geometry}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathrsfs}
+\setmainfont{Caladea}
+\usepackage[UTF8]{ctex}
+
+
+
+%% 也可以选用其它字库：
+% \setCJKmainfont[%
+%   ItalicFont=AR PL KaitiM GB,
+%   BoldFont=Noto Sans CJK SC,
+% ]{AR PL SungtiL GB}
+% \setCJKsansfont{Noto Sans CJK SC}
+% \renewcommand{\kaishu}{\CJKfontspec{AR PL KaitiM GB}}
+% 一般字体（\verb|\rmfamily|）为〖宋体〗。
+% 需要强调时，Fandol \verb|\textbf| 用的是〖\textbf{加黑宋体}〗。
+% \verb|\sffamily| 用的是 〖\textsf{黑体}〗。
+% 中文字体是没有斜体的，因此 \verb|\emph|和 \verb|\textit| 都是〖\textit{楷体}〗。
+% 单距字体（\verb|\ttfamily|）很多人爱用\texttt{〖仿宋〗}。
+%啊啊啊啊啊啊喵喵喵喵喵喵嘤嘤嘤嘤嘤嘤啊呜啊呜啊呜
+
+% \usepackage{listings}
+% \lstset{language={[LaTeX]TeX},
+% basicstyle=\ttfamily, frame=single,columns=fullflexible}
+\usepackage{minted}
+
+% 设置数学
+\usepackage{extarrows} % 长等于号
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm, tikz}
+\allowdisplaybreaks[4] % 允许eqnarray换页
+\newtheoremstyle{mythmstyle} % style name
+                {0em} % space above
+                {0em} % space below
+                {\upshape\CJKfamily{kai}} % body font
+                {1.7em} % indent amount
+                {\bfseries} % theorem head font
+                {} % punctuation after theorem head
+                {1em} % space after theorem head
+                {} % theorem head spec
+\theoremstyle{mythmstyle}
+\newtheorem{theorem}{定理}
+\def\bma{\bm{\alpha}}
+\def\bmb{\bm{\beta}}
+\def\bbmr{\mathbb{R}}
+
+\usepackage[breaklinks]{hyperref}
+
+\title{模拟2}
+\author{}
+
+\begin{document}\maketitle
+\large
+\noindent1. 设$f(n)$为正整数$n$(十进制)的各位上的数字的平方之和, 比如 $f(123) = 1^2 + 2^2 + 3^2 = 14$. 记$f_1(n) = f(n), f_{k+1}(n) = f(f_{k}(n)), k=1,2,3,\dots $, 则$f_{2019}(2019)=\underline{ \quad \quad  \quad  }$.\\
+
+\noindent2. 四边形$ABCD$的四条边长依次是1、2、3、4, 则该四边形面积的最大值为\underline{ \quad \quad  \quad  }.\\
+
+\noindent3. 设点$B,C$分别在第四, 第一象限, 且点$B, C$都在抛物线$y^2 = 2px(p>0)$上, $O$为坐标原点, $\angle OBC = 30^{\circ}, \angle BOC = 60^{\circ}$, $k$为直线$OC$的斜率, 则$k^3 + 2k = \underline{ \quad \quad  \quad  }$.\\
+
+\noindent4. 设复数$z$满足$\left|z\right| = 1$, 则$\left|z^3 - z + 2 \right|$的最小值为\underline{ \quad \quad  \quad  }.\\
+
+\noindent5. 已知数列$\{a_n\}$满足$a_n = \left[\frac{n^2}{40}\right] + \left[\sqrt{40n}\right](n \in \bm{N^{+}})$, 则$a_1 + a_2 + \dots + a_{40} = \underline{ \quad \quad  \quad  }$.\\
+
+\noindent6. 过四面体$ABCD$的顶点$D$做半径为1的球, 该球与四面体$ABCD$的外接球切于点$D$, 且与平面$ABC$外切. 若$AD = 2\sqrt{3}, \angle BAD = \angle CAD = 45^{\circ}, \angle BAC = 60^{\circ}$, 则四面体$ABCD$的外接球半径$r$为\underline{ \quad \quad  \quad  } .\\
+
+\noindent7. 将属于区间$[0,1]$之间分母不超过99的最简分数从小到大排成一列, 则恰在$\frac{17}{16}$左边的分数为\underline{ \quad \quad  \quad  } .\\
+
+\noindent8. 6名男生和$x$名女生随机站成一排, 每名男生都至少与一名男生相邻, 已知至少有4名男生站在一起的概率为$p$, 若$p \leq \frac{1}{100}$, 则$x$的最小值为\underline{ \quad \quad  \quad  }.\\
+
+\noindent9. 已知数列$\{a_n\}$满足$a_1 = a_2 = 7, a_3 = 47, a_{n+1}a_{n} = a_{n+2} + a_{n-1}(n \geq 2)$, 求证: $a_{n+2} + 2$是完全平方数.\\
+
+\noindent10. 设椭圆的方程为$\frac{x^{2}}{a^2} + y^2 = 1 (a>1)$. 已知点$A(0,1)$为圆心的圆与椭圆至多只有3个公共点, 求椭圆离心率的取值范围.\\
+
+\noindent11. 已知$x,y,z \in [0,1]$, 且$x^2 + y^2 + z^2 = 2 $, 求证:
+$1<\frac{x}{1+2yz} + \frac{y}{1+2xz} + \frac{z}{1+2xy} \leq 2$
+
+
+\end{document}

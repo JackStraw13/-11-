@@ -1,0 +1,82 @@
+\documentclass[10pt,column,letterpaper]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[margin=2cm,a4paper]{geometry}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathrsfs}
+\setmainfont{Caladea}
+\usepackage[UTF8]{ctex}
+
+
+
+%% 也可以选用其它字库：
+% \setCJKmainfont[%
+%   ItalicFont=AR PL KaitiM GB,
+%   BoldFont=Noto Sans CJK SC,
+% ]{AR PL SungtiL GB}
+% \setCJKsansfont{Noto Sans CJK SC}
+% \renewcommand{\kaishu}{\CJKfontspec{AR PL KaitiM GB}}
+% 一般字体（\verb|\rmfamily|）为〖宋体〗。
+% 需要强调时，Fandol \verb|\textbf| 用的是〖\textbf{加黑宋体}〗。
+% \verb|\sffamily| 用的是 〖\textsf{黑体}〗。
+% 中文字体是没有斜体的，因此 \verb|\emph|和 \verb|\textit| 都是〖\textit{楷体}〗。
+% 单距字体（\verb|\ttfamily|）很多人爱用\texttt{〖仿宋〗}。
+%啊啊啊啊啊啊喵喵喵喵喵喵嘤嘤嘤嘤嘤嘤啊呜啊呜啊呜
+
+% \usepackage{listings}
+% \lstset{language={[LaTeX]TeX},
+% basicstyle=\ttfamily, frame=single,columns=fullflexible}
+\usepackage{minted}
+
+% 设置数学
+\usepackage{extarrows} % 长等于号
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm, tikz}
+\allowdisplaybreaks[4] % 允许eqnarray换页
+\newtheoremstyle{mythmstyle} % style name
+                {0em} % space above
+                {0em} % space below
+                {\upshape\CJKfamily{kai}} % body font
+                {1.7em} % indent amount
+                {\bfseries} % theorem head font
+                {} % punctuation after theorem head
+                {1em} % space after theorem head
+                {} % theorem head spec
+\theoremstyle{mythmstyle}
+\newtheorem{theorem}{定理}
+\def\bma{\bm{\alpha}}
+\def\bmb{\bm{\beta}}
+\def\bbmr{\mathbb{R}}
+
+\usepackage[breaklinks]{hyperref}
+
+\title{}
+\author{}
+
+\begin{document}%\maketitle
+\large
+\noindent{1. 求证: 任意正合数可以表示为$xy+yz+xz+1$, 其中, $x,y,z$为正整数.}\\
+
+\noindent2. 求证: 任意正有理数可以表示为$\frac{a^3 + b^3}{c^3 + d^3}$, 其中, $a,b,c,d$为正整数.\\
+
+\noindent3. 数列$\{x_n\}$满足$x_1 = 0, x_{n+1} = 5x_n + \sqrt{24x_{n}^{2}+1}$, 求证序列$\{x_n\}$每项都是整数.\\
+
+\noindent4. 令$\{a_n\}$为正整数序列, 满足对任意$i \not= j$, 都有$(a_i, a_j) = 1$. 若$\sum\limits_{n=0}^{+\infty}\frac{1}{a_n} = +\infty$, 求证: 序列$\{a_n\}$中有无穷个素数.\\
+
+\noindent5. 令$p_i$表示第$i$个素数. 求证: $p_1^{k} + p_2^{k} + \dots + p_n^{k} > n^{k+1}$.\\
+
+\noindent6. 求证: 对任意大于3的素数$p$, $\frac{2^p+1}{3}$不是3的倍数.\\
+
+\noindent7. 对于任意正整数$n$与素数$p$. 求证: 若$p^p|n!$, 则$p^{p+1}|n!$\\
+
+\noindent8. 考虑两个数论函数$f,g$满足$A(n) = \sum\limits_{d|n}f(d)g(\frac{n}{d})$, 其中$A(n),g$都是乘性函数, 求证: $f$也是乘性函数.\\
+
+\noindent9. 令$n$为正整数, 求证$x+y+\frac{1}{x}+\frac{1}{y} = 3n$ 没有正有理数解. \\
+
+\noindent10. 求方程$2^p + 3^p = a^n$ 的所有正整数解, 其中$a,n$为正整数, $p$为素数.\\
+
+
+
+
+\end{document}

@@ -1,0 +1,68 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[margin=2cm,a4paper]{geometry}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathrsfs}
+\setmainfont{Caladea}
+\usepackage[UTF8]{ctex}
+
+
+
+%% 也可以选用其它字库：
+% \setCJKmainfont[%
+%   ItalicFont=AR PL KaitiM GB,
+%   BoldFont=Noto Sans CJK SC,
+% ]{AR PL SungtiL GB}
+% \setCJKsansfont{Noto Sans CJK SC}
+% \renewcommand{\kaishu}{\CJKfontspec{AR PL KaitiM GB}}
+% 一般字体（\verb|\rmfamily|）为〖宋体〗。
+% 需要强调时，Fandol \verb|\textbf| 用的是〖\textbf{加黑宋体}〗。
+% \verb|\sffamily| 用的是 〖\textsf{黑体}〗。
+% 中文字体是没有斜体的，因此 \verb|\emph|和 \verb|\textit| 都是〖\textit{楷体}〗。
+% 单距字体（\verb|\ttfamily|）很多人爱用\texttt{〖仿宋〗}。
+%啊啊啊啊啊啊喵喵喵喵喵喵嘤嘤嘤嘤嘤嘤啊呜啊呜啊呜
+
+% \usepackage{listings}
+% \lstset{language={[LaTeX]TeX},
+% basicstyle=\ttfamily, frame=single,columns=fullflexible}
+\usepackage{minted}
+
+% 设置数学
+\usepackage{extarrows} % 长等于号
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm, tikz}
+\allowdisplaybreaks[4] % 允许eqnarray换页
+\newtheoremstyle{mythmstyle} % style name
+                {0em} % space above
+                {0em} % space below
+                {\upshape\CJKfamily{kai}} % body font
+                {1.7em} % indent amount
+                {\bfseries} % theorem head font
+                {} % punctuation after theorem head
+                {1em} % space after theorem head
+                {} % theorem head spec
+\theoremstyle{mythmstyle}
+\newtheorem{theorem}{定理}
+\def\bma{\bm{\alpha}}
+\def\bmb{\bm{\beta}}
+\def\bbmr{\mathbb{R}}
+
+\usepackage[breaklinks]{hyperref}
+
+\title{}
+\author{}
+
+\begin{document}%\maketitle
+\large
+\noindent1. 把144片睡莲叶子排成一行, 涂为红色, 绿色, 蓝色, 红色, 绿色, 蓝色等. 证明: 一只青蛙按从左到右的序列从第一片睡莲叶子起, 跳过不同的睡莲叶子, 到达最后一片睡莲叶子的排列方法数是3的倍数.\\
+
+\noindent2. 某人在正$n$边形的所有顶点上写上0, 每分钟选出一个顶点, 把2加到写在此顶点上的数, 并从写在两个相邻顶点上的数减去1. 求证: 无论经过多长时间, 都得不到1写在一个顶点上, -1写在另一个顶点上, 0写在其他各顶点上的布局.\\
+
+\noindent3. 对正整数$n$, 证明: $v_5(n) = v_5(F_n)$, 其中$F_n$是第$n$个Fibonacci数.\\
+
+\noindent4. 数列$\{x_n\}$定义为$x_1 = 1, x_2 = 3, x_{n+1} = 6x_{n} - x_{n-1}$, 其中$n \geq 1$. 证明: 对所有$n \geq 1, x_n + (-1)^n$ 是完全平方数.\\
+
+
+\end{document}

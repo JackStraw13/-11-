@@ -1,0 +1,88 @@
+\documentclass[10pt,column,letterpaper]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[margin=2cm,a4paper]{geometry}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathrsfs}
+\setmainfont{Caladea}
+\usepackage[UTF8]{ctex}
+
+
+
+%% 也可以选用其它字库：
+% \setCJKmainfont[%
+%   ItalicFont=AR PL KaitiM GB,
+%   BoldFont=Noto Sans CJK SC,
+% ]{AR PL SungtiL GB}
+% \setCJKsansfont{Noto Sans CJK SC}
+% \renewcommand{\kaishu}{\CJKfontspec{AR PL KaitiM GB}}
+% 一般字体（\verb|\rmfamily|）为〖宋体〗。
+% 需要强调时，Fandol \verb|\textbf| 用的是〖\textbf{加黑宋体}〗。
+% \verb|\sffamily| 用的是 〖\textsf{黑体}〗。
+% 中文字体是没有斜体的，因此 \verb|\emph|和 \verb|\textit| 都是〖\textit{楷体}〗。
+% 单距字体（\verb|\ttfamily|）很多人爱用\texttt{〖仿宋〗}。
+%啊啊啊啊啊啊喵喵喵喵喵喵嘤嘤嘤嘤嘤嘤啊呜啊呜啊呜
+
+% \usepackage{listings}
+% \lstset{language={[LaTeX]TeX},
+% basicstyle=\ttfamily, frame=single,columns=fullflexible}
+\usepackage{minted}
+
+% 设置数学
+\usepackage{extarrows} % 长等于号
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm, tikz}
+\allowdisplaybreaks[4] % 允许eqnarray换页
+\newtheoremstyle{mythmstyle} % style name
+                {0em} % space above
+                {0em} % space below
+                {\upshape\CJKfamily{kai}} % body font
+                {1.7em} % indent amount
+                {\bfseries} % theorem head font
+                {} % punctuation after theorem head
+                {1em} % space after theorem head
+                {} % theorem head spec
+\theoremstyle{mythmstyle}
+\newtheorem{theorem}{定理}
+\def\bma{\bm{\alpha}}
+\def\bmb{\bm{\beta}}
+\def\bbmr{\mathbb{R}}
+
+\usepackage[breaklinks]{hyperref}
+
+\title{}
+\author{}
+
+\begin{document}%\maketitle
+\large
+\noindent1. $f_{n-1}f_{n+1} - f_{n}^2 = (-1)^n, n \geq 2$.\\
+
+\noindent2. $5f_n^2 \pm 4$ 中必有一个完全平方数.\\
+
+\noindent3. $f_1 + f_2 + \dots + f_n = f_{n+2} - 1$.\\
+
+\noindent4. $f_1 + f_3 + f_5 + \dots + f_{2n-1} = f_{2n}$.\\
+
+\noindent5. $f_2 + f_4 +f_6 + \dots + f_2n = f_{2n+1} - 1$.\\
+
+\noindent6. $nf_1 + (n-1)f_2 + (n-2)f_3 + \dots + 2f_{n-1} + f_n = f_{n+4} - (n+3)$.\\
+
+\noindent7. $f_{m+n} = f_mf_{n+1} + f_{m-1}f_n$.\\
+
+\noindent8. $f_{2n+1} = f_n^2 + f_{n+1}^2$.\\
+
+\noindent9. $f_{2n} = f_{n+1}^2 - f_{n-1}^2$. \\
+
+\noindent10. $f_{n}^2 - f{n-1}^2 = f_nf_{n-1} - (-1)^n$.\\
+
+\noindent11. $f_{n+2}^2 - f_{n-1}^2 = 4f_nf_{n+1}$.\\
+
+\noindent12. $f_{3n} = f_{n+1}^{3} + f_n^3 - f_{n-1}^3$.\\
+
+\noindent13. $f_{n+k}f_{n-k} - f_n^2 = (-1)^{n+k-1}f_k^2$.\\
+
+\noindent14. 
+
+
+\end{document}

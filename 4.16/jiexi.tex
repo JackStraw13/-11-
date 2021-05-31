@@ -1,0 +1,80 @@
+\documentclass[10pt,column,letterpaper]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage[margin=2cm,a4paper]{geometry}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathrsfs}
+\setmainfont{Caladea}
+\usepackage[UTF8]{ctex}
+
+
+
+%% 也可以选用其它字库：
+% \setCJKmainfont[%
+%   ItalicFont=AR PL KaitiM GB,
+%   BoldFont=Noto Sans CJK SC,
+% ]{AR PL SungtiL GB}
+% \setCJKsansfont{Noto Sans CJK SC}
+% \renewcommand{\kaishu}{\CJKfontspec{AR PL KaitiM GB}}
+% 一般字体（\verb|\rmfamily|）为〖宋体〗。
+% 需要强调时，Fandol \verb|\textbf| 用的是〖\textbf{加黑宋体}〗。
+% \verb|\sffamily| 用的是 〖\textsf{黑体}〗。
+% 中文字体是没有斜体的，因此 \verb|\emph|和 \verb|\textit| 都是〖\textit{楷体}〗。
+% 单距字体（\verb|\ttfamily|）很多人爱用\texttt{〖仿宋〗}。
+%啊啊啊啊啊啊喵喵喵喵喵喵嘤嘤嘤嘤嘤嘤啊呜啊呜啊呜
+
+% \usepackage{listings}
+% \lstset{language={[LaTeX]TeX},
+% basicstyle=\ttfamily, frame=single,columns=fullflexible}
+\usepackage{minted}
+
+% 设置数学
+\usepackage{extarrows} % 长等于号
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm, tikz}
+\allowdisplaybreaks[4] % 允许eqnarray换页
+\newtheoremstyle{mythmstyle} % style name
+                {0em} % space above
+                {0em} % space below
+                {\upshape\CJKfamily{kai}} % body font
+                {1.7em} % indent amount
+                {\bfseries} % theorem head font
+                {} % punctuation after theorem head
+                {1em} % space after theorem head
+                {} % theorem head spec
+\theoremstyle{mythmstyle}
+\newtheorem{theorem}{定理}
+\def\bma{\bm{\alpha}}
+\def\bmb{\bm{\beta}}
+\def\bbmr{\mathbb{R}}
+
+\usepackage[breaklinks]{hyperref}
+
+\title{}
+\author{}
+
+\begin{document}%\maketitle
+\large
+\noindent25. 抛物线$y^2 = 2px (p>0)$的对称轴上任意一点$M(-m,0),(m>0)$作抛物线的两条切线, 切点分别为$A,B$, 则切点弦$AB$所在直线必过点$N(m,0)$.\\
+
+\noindent26. 过椭圆$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$的对称轴上的任意一点$M(m,n)$作椭圆的两条切线, 切点分别为$A,B$.\\
+(1)当$n=0$, $\left|m\right|>a$时, 则切点弦$AB$所在直线必过点$P(\frac{a^2}{m},0)$;\\
+(2)当$m=0$, $\left|n\right|>b$时, 则切点弦$AB$所在直线必过点$P(0,\frac{b^2}{n})$;\\
+
+\noindent27. 过双曲线$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1(a>0,b>0)$的实轴上的任意一点$M(m,0)$作双曲线（单支）的两条切线, 切点分别为$A,B$. 则切点弦$AB$所在直线必过点$P(\frac{a^2}{m},0)$.\\
+
+\noindent28. 过抛物线$y^2 = 2px (p>0)$外任意一点$M$作抛物线的两条切线, 切点分别为$A,B$, 弦$AB$的中点为$N$, 则直线$MN$必与其对称轴平行.\\
+
+\noindent29. 若椭圆$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)$与双曲线$\frac{x^2}{m^2}-\frac{y^2}{n^2}=1(m>0,n>0)$共焦点, 则在它们焦点处的切线相互垂直.\\
+
+\noindent30. 过椭圆外一定点$P$作其一条割线, 交点为$A,B$, 则满足$\left|AP\right|\cdot\left|BQ\right|=\left|AQ\right|\cdot\left|BP\right|$动点$Q$的轨迹就是过$P$作椭圆两条切线形成的切点弦所在的直线方程上.\\
+
+\noindent31. 过双曲线外一定点$P$作其一条割线, 交点为$A,B$, 则满足$\left|AP\right|\cdot\left|BQ\right|=\left|AQ\right|\cdot\left|BP\right|$动点$Q$的轨迹就是过$P$作双曲线两条切线形成的切点弦所在的直线方程上.\\
+
+\noindent32. 过抛物线外一定点$P$作其一条割线, 交点为$A,B$, 则满足$\left|AP\right|\cdot\left|BQ\right|=\left|AQ\right|\cdot\left|BP\right|$动点$Q$的轨迹就是过$P$作抛物线两条切线形成的切点弦所在的直线方程上.\\
+
+
+
+
+\end{document}
